@@ -164,6 +164,9 @@ public class revenuegenerated extends HttpServlet {
 						"  overlayBg.style.display = \"none\";\r\n" + 
 						"}\r\n" + 
 						"</script>");
+
+				out.println("&nbsp&nbsp&nbsp&nbsp<button onclick = \"window.print()\">Print</button>");
+				
 				out.println("</html></body>");
 				con.close();
 			} catch (SQLException e) {

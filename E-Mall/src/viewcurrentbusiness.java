@@ -128,6 +128,7 @@ public class viewcurrentbusiness extends HttpServlet {
 					out.println("<tr><td>" + id + "</td><td>" + name + "</td><td>"  + email + "</td><td>"  
 					+ space + "</td><td>"  + units +"</td><td>"  + startdate +"</td><td>"  + enddate +"</td><td>"  + revenue + "</td></tr>");
 				}
+				
 				out.println("</table></div>\r\n" + 
 						"\r\n" + 
 						"<script>\r\n" + 
@@ -154,6 +155,7 @@ public class viewcurrentbusiness extends HttpServlet {
 						"  overlayBg.style.display = \"none\";\r\n" + 
 						"}\r\n" + 
 						"</script>");
+				out.println("&nbsp&nbsp&nbsp&nbsp<button onclick = \"window.print()\">Print</button>");
 				out.println("</html></body>");
 				con.close();
 			} catch (SQLException e) {
