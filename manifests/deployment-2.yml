@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "aks-f886"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "aks-f886"
+  template:
+    metadata:
+      labels:
+        app: "aks-f886"
+    spec:
+      containers:
+        - name: "aks-f886"
+          image: "aksapp123.azurecr.io/aks"
+          ports:
+          - containerPort: 80
